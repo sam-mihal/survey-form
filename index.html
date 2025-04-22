@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a short survey created to demostrate my ability to use HTML.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal details</legend>
+        <label id="name-label">Please input name: <input id="name" type="text" required placeholder="Samuel Mihalceanu" /></label>
+        <label id="email-label">Please input email: <input type="email" id="email" placeholder="sam.mihalceanu@gmail.com" required /></label>
+        <label id="number-label">Please input mobile number: <input type="number" id="number" placeholder="07777777777" min=07000000000 max= 0799999999 /></label>
+        <label>Please choose your preferred name: 
+          <select id="dropdown">
+            <option>Fred</option>
+            <option>Steve</option>
+          <select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Sex</legend>
+        <label>
+          <input type="radio" name="Sex" value="female">
+          Female
+        </label>
+        <label>
+          <input type="radio" name="Sex" value="male">
+          Male
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Places visited</legend>
+        <label>
+          <input type="checkbox" value="Thailand"> Thailand
+        </label>
+        <label>
+          <input type="checkbox" value="China"> China
+        </label>
+        <label>
+          <input type="checkbox" value="Japan"> Japan
+        </label>
+        <p>Additonal comments:</p>
+        <label><textarea rows=3 cols=40></textarea></label>
+      </fieldset>
+      <label><input type="submit" id="submit" /></label>
+    </form>
+  </body>
+</html>
